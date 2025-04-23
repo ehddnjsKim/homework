@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "login.js",
   "scripts": {
-    "start": "node login.js",
-    "dev": "node login.js"
+    "start": "node serv.js",
+    "dev": "node serv.js"
   },
   "keywords": [],
   "author": "",
