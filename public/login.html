@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+  </head>
+  <body>
+    <h2>로그인</h2>
+    <p>아이디: <input type="text" name="userid" id="userid" /></p>
+    <p>비밀번호: <input type="text" name="userpw" id="userpw" /></p>
+    <p><button id="loginBtn">로그인</button></p>
+
+    <script>
+      document.getElementById("loginBtn").addEventListener("click", () => {
+        const userid = document.getElementById("userid").value;
+        const userpw = document.getElementById("userpw").value;
+
+        // 입력값을 서버에 GET 방식으로 전달하며 페이지 이동
+        window.location.href = `/login?userid=${userid}&userpw=${userpw}`;
+      });
+    </script>
+  </body>
+</html>
